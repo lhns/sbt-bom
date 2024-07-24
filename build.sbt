@@ -1,6 +1,6 @@
 ThisBuild / organization := "de.lhns"
 ThisBuild / version := "0.4.0-SNAPSHOT"
-ThisBuild / scalaVersion := "2.12.19"
+ThisBuild / scalaVersion := "2.13.14"
 
 ThisBuild / licenses += ("MIT License", url("https://opensource.org/licenses/MIT"))
 ThisBuild / homepage := scmInfo.value.map(_.browseUrl)
