@@ -93,3 +93,7 @@ Scripted tests are run using `scripted` comand.
 See [Releases](https://github.com/lhns/sbt-bom/releases).
 
 For versions before 0.4.0 see [siculo/sbt-bom#changelog](https://github.com/siculo/sbt-bom#changelog).
+
+## License
+
+This project uses the MIT License. See the file called LICENSE.
