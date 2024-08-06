@@ -11,8 +11,7 @@
 The aim of this [project](https://siculo.github.io/sbt-bom/) is to:
 
 - extract a valid [CycloneDX](https://cyclonedx.org/) bom file from [sbt](https://www.scala-sbt.org/) projects
-- ensure that the bom file is processable with Software Composition Analysis tools (
-  like [Dependency Track](https://dependencytrack.org/))
+- ensure that the bom file is processable with Software Composition Analysis tools (like [Dependency Track](https://dependencytrack.org/))
 
 ## Usage
 
