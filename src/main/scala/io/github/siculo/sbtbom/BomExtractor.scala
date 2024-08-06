@@ -76,7 +76,7 @@ class BomExtractor(
       log.info(s"Configuration name = ${configurationReport.configuration.name}, modules: ${configurationReport.modules.size}")
       configurationReport.modules.map { module =>
         new ComponentExtractor(module).component
-      }
+      }.distinct
     }.getOrElse(Seq())
   }
 
@@ -99,6 +99,9 @@ class BomExtractor(
       component.setPurl(
         new PackageURL(PackageURL.StandardTypes.MAVEN, group, name, version, new util.TreeMap(), null).canonicalize()
       )
+      if (schemaVersion.getVersion >= Version.VERSION_11.getVersion) {
+        component.setBomRef(component.getPurl)
+      }
       component.setScope(Component.Scope.REQUIRED)
       component.setHashes(hashes(artifactPaths(moduleReport)).asJava)
       licenseChoice.foreach(component.setLicenses)
@@ -132,15 +135,17 @@ class BomExtractor(
     private def licenseChoice: Option[LicenseChoice] = {
       val licenses: Seq[License] = moduleReport.licenses.map { case (name, urlOption) =>
         val license = new License()
-        license.setName(name)
         urlOption.foreach { licenseUrl =>
           LicensesArchive.bundled.findByNormalizedUrl(licenseUrl).foreach { archiveLicense =>
             license.setId(archiveLicense.id)
-            license.setName(archiveLicense.name)
           }
           if (schemaVersion.getVersion >= Version.VERSION_11.getVersion) {
             license.setUrl(licenseUrl)
           }
+        }
+        if (license.getId == null) {
+          // must not be set if id is defined
+          license.setName(name)
         }
         license
       }
