@@ -1,4 +1,4 @@
-ThisBuild / scalaVersion := "2.12.20"
+ThisBuild / scalaVersion := "2.13.15"
 ThisBuild / versionScheme := Some("early-semver")
 ThisBuild / organization := "de.lhns"
 ThisBuild / version := {
