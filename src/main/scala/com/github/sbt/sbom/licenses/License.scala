@@ -1,4 +1,4 @@
-package io.github.siculo.sbtbom.licenses
+package com.github.sbt.sbom.licenses
 
 case class License(
                     id: String,

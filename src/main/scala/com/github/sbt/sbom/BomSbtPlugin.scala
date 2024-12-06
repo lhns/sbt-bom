@@ -1,6 +1,6 @@
-package io.github.siculo.sbtbom
+package com.github.sbt.sbom
 
-import io.github.siculo.sbtbom.SchemaVersions.*
+import SchemaVersions.*
 import org.cyclonedx.Version
 import org.cyclonedx.model.Component
 import sbt.*

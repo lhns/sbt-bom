@@ -1,6 +1,6 @@
-package io.github.siculo.sbtbom
+package com.github.sbt.sbom
 
-import io.github.siculo.sbtbom.licenses.LicensesArchive
+import com.github.sbt.sbom.licenses.LicensesArchive
 import org.scalatest.matchers.should.Matchers
 import org.scalatest.wordspec.AnyWordSpec
 

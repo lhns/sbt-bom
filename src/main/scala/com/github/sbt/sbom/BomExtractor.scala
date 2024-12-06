@@ -1,10 +1,10 @@
-package io.github.siculo.sbtbom
+package com.github.sbt.sbom
 
 import com.github.packageurl.PackageURL
+import com.github.sbt.sbom.licenses.LicensesArchive
 import org.cyclonedx.Version
 import org.cyclonedx.model.{Hash, License, *}
 import sbt.*
-import _root_.io.github.siculo.sbtbom.licenses.LicensesArchive
 import org.cyclonedx.util.BomUtils
 import sbt.librarymanagement.ModuleReport
 

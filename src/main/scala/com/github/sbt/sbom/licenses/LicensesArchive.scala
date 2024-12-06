@@ -1,6 +1,6 @@
-package io.github.siculo.sbtbom.licenses
+package com.github.sbt.sbom.licenses
 
-import io.github.siculo.sbtbom.licenses.LicensesArchive.normalizeUrl
+import LicensesArchive.normalizeUrl
 
 import scala.io.Source
 

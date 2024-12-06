@@ -1,4 +1,4 @@
-package io.github.siculo.sbtbom
+package com.github.sbt.sbom
 
 import org.apache.commons.io.FileUtils
 import org.cyclonedx.Version

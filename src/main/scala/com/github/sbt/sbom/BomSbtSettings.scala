@@ -1,6 +1,6 @@
-package io.github.siculo.sbtbom
+package com.github.sbt.sbom
 
-import io.github.siculo.sbtbom.BomSbtPlugin.autoImport.*
+import BomSbtPlugin.autoImport.*
 import sbt.*
 import sbt.Keys.{sLog, target}
 
