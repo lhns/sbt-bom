@@ -54,7 +54,7 @@ lazy val root = (project in file("."))
       "io.circe" %% "circe-generic" % "0.14.10",
       "io.circe" %% "circe-parser" % "0.14.10",
       "org.scalatest" %% "scalatest" % "3.2.19" % Test,
-      "org.scalamock" %% "scalamock" % "6.0.0" % Test
+      "org.scalamock" %% "scalamock" % "6.1.1" % Test
     ),
     buildInfoPackage := "io.github.siculo.sbtbom",
     scriptedLaunchOpts := {
