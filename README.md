@@ -8,6 +8,8 @@
 
 *sbt bom.xml exporter*
 
+**DEPRECATED! Please migrate to [sbt-sbom](https://github.com/sbt/sbt-sbom)**
+
 The aim of this [project](https://siculo.github.io/sbt-bom/) is to:
 
 - extract a valid [CycloneDX](https://cyclonedx.org/) bom file from [sbt](https://www.scala-sbt.org/) projects
