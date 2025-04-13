@@ -50,7 +50,7 @@ lazy val root = (project in file("."))
     name := "sbt-bom",
     sbtPlugin := true,
     libraryDependencies ++= Seq(
-      "org.cyclonedx" % "cyclonedx-core-java" % "9.0.5",
+      "org.cyclonedx" % "cyclonedx-core-java" % "9.1.0",
       "io.circe" %% "circe-generic" % "0.14.10",
       "io.circe" %% "circe-parser" % "0.14.10",
       "org.scalatest" %% "scalatest" % "3.2.19" % Test,
