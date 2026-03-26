@@ -53,7 +53,7 @@ lazy val root = (project in file("."))
       "org.cyclonedx" % "cyclonedx-core-java" % "9.0.5",
       "io.circe" %% "circe-generic" % "0.14.10",
       "io.circe" %% "circe-parser" % "0.14.10",
-      "org.scalatest" %% "scalatest" % "3.2.19" % Test,
+      "org.scalatest" %% "scalatest" % "3.2.20" % Test,
       "org.scalamock" %% "scalamock" % "6.0.0" % Test
     ),
     buildInfoPackage := "io.github.siculo.sbtbom",
